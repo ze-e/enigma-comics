@@ -3,6 +3,7 @@ import Background from "./components/Background/Background";
 import MenuItem from "./components/MenuItem/MenuItem";
 import MainImg from "./img/full.png";
 import Lettering from "./img/lettering.png";
+import MainImage from "./components/MainImage/MainImage";
 
 export default function Home() {
   return (
@@ -21,7 +22,8 @@ export default function Home() {
             </MenuItem>
           </div>
           <div className="flex justify-center p-[32px]">
-            <Image src={MainImg} alt="enigma-logo" width={300} />
+            <MainImage />
+            {/* <Image src={MainImg} alt="enigma-logo" width={300} /> */}
           </div>
           <div className="w-[684px] mx-auto flex justify-between">
             <MenuItem>

@@ -27,3 +27,35 @@ body {
   color:white;
   text-shadow: -5px -5px 0 black, 5px -5px 0 black,  -5px 5px 0 black,  5px 5px 0 black;   
 }
+
+@keyframes rotateSlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.rotate-slow {
+  animation: rotateSlow 10s linear infinite;
+}
+
+@keyframes rotateSlowRev {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.rotate-slowRev {
+  animation: rotateSlowRev 9s linear infinite;
+}
