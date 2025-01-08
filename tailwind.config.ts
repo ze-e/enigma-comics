@@ -12,6 +12,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        'bg-overlay': "url('/bg-overlay.jpg')",
+      },
     },
   },
   plugins: [],
