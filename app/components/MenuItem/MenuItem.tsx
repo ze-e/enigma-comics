@@ -1,10 +1,18 @@
+import Link from "next/link";
 import { jacquard24Class } from "../Fonts/Fonts";
-
-export default function MenuItem({ children }: { children: React.ReactNode }) {
+Link
+export default function MenuItem({ children, href }: { children: React.ReactNode, href?: string }) {
     
-  return ( 
-    <h2 className={`text-4xl font-bold text-center mb-4 md:text-[75px] ${jacquard24Class} text-stroke antialiased subpixel-antialiased`}>
-        {children}
+  const ComponentBody:React.FC = () => (
+    <h2 className={`
+      text-4xl font-bold text-center mb-4 md:text-[75px] 
+      text-stroke antialiased subpixel-antialiased
+      ${jacquard24Class}`
+    }>
+      {children}
     </h2>
-    )
+  )
+  
+
+  return href ? <Link href={href}><ComponentBody /></Link> : <ComponentBody />
 }

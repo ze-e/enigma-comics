@@ -1,9 +1,8 @@
 import Image from "next/image";
-import Background from "./components/Background/Background";
-import MenuItem from "./components/MenuItem/MenuItem";
-import MainImg from "./img/full.png";
-import Lettering from "./img/lettering.png";
-import MainImage from "./components/MainImage/MainImage";
+import Background from "@/app/components/Background/Background";
+import MenuItem from "@/app/components/MenuItem/MenuItem";
+import Lettering from "@/app//img/lettering.png";
+import MainImage from "@/app/components/MainImage/MainImage";
 
 export default function Home() {
   return (
@@ -14,22 +13,21 @@ export default function Home() {
           <Image src={Lettering} alt="enigma-comics" width={600} />
         </div>
           <div className="w-[684px] mx-auto flex justify-between">
-            <MenuItem>
+            <MenuItem href="/buy">
               Buy Comics
             </MenuItem>
-            <MenuItem>
+            <MenuItem href="/series">
               Our Series
             </MenuItem>
           </div>
           <div className="flex justify-center p-[32px]">
             <MainImage />
-            {/* <Image src={MainImg} alt="enigma-logo" width={300} /> */}
           </div>
           <div className="w-[684px] mx-auto flex justify-between">
-            <MenuItem>
+            <MenuItem href="/artists">
               Our Artists
             </MenuItem>
-            <MenuItem>
+            <MenuItem href="/contact">
               Contact Us
             </MenuItem>
           </div>
