@@ -14,7 +14,7 @@ export default function Buy() {
         <h6>Physical Copy</h6>
         <ul>
             <li>
-              <div>Joe's Emporium collectibles store</div>
+              <div>Joe&apos;s Emporium collectibles store</div>
               <div>615 Main St, Caldwell, ID 83605</div>
               <div><a href="#">Website</a></div>
               </li>
