@@ -13,10 +13,10 @@ export default function Home() {
           <Image src={Lettering} alt="enigma-comics" width={600} />
         </div>
           <div className="w-[684px] mx-auto flex justify-between">
-            <MenuItem href="/buy">
+            <MenuItem href="/placeholder">
               Buy Comics
             </MenuItem>
-            <MenuItem href="/series">
+            <MenuItem href="/placeholder">
               Our Series
             </MenuItem>
           </div>
@@ -24,10 +24,10 @@ export default function Home() {
             <MainImage />
           </div>
           <div className="w-[684px] mx-auto flex justify-between">
-            <MenuItem href="/artists">
+            <MenuItem href="/placeholder">
               Our Artists
             </MenuItem>
-            <MenuItem href="/contact">
+            <MenuItem href="/placeholder">
               Contact Us
             </MenuItem>
           </div>
