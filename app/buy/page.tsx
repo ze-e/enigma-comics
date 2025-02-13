@@ -1,4 +1,3 @@
-import Image from "next/image";
 import MenuItem from "@/app/components/MenuItem/MenuItem";
 
 export default function Buy() {
@@ -8,11 +7,17 @@ export default function Buy() {
         <h5>Available for purchase:</h5>
         <h6>Online</h6>
         <ul>
-            <li>WebToons</li>
+            <li>
+              <div>Webtoons</div>
+              <div><a href="#">Website</a></div></li>
         </ul>
         <h6>Physical Copy</h6>
         <ul>
-            <li>123 Main Street, Boise, ID</li>
+            <li>
+              <div>Joe's Emporium collectibles store</div>
+              <div>615 Main St, Caldwell, ID 83605</div>
+              <div><a href="#">Website</a></div>
+              </li>
         </ul>
     </>);
   }

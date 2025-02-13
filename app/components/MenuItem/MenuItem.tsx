@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { jacquard24Class } from "../Fonts/Fonts";
-Link
+
 export default function MenuItem({ children, href }: { children: React.ReactNode, href?: string }) {
     
   const ComponentBody:React.FC = () => (

@@ -17,18 +17,22 @@ export default function MainMenu() {
       <li>
           <Link href="/">Home</Link>
       </li>
+      {" "}◾{" "}
       <li>
-          <Link href="/artists">Artists</Link>
-        </li>
-        <li>
-          <Link href="/buy">Buy</Link>
-        </li>
-        <li>
-          <Link href="/contact">Contact</Link>
-        </li>
-        <li>
-          <Link href="/series">Series</Link>
-        </li>
+        <Link href="/artists">Artists</Link>
+      </li>
+      {" "}◾{" "}
+      <li>
+        <Link href="/buy">Buy</Link>
+      </li>
+      {" "}◾{" "}
+      <li>
+        <Link href="/contact">Contact</Link>
+      </li>
+      {" "}◾{" "}
+      <li>
+        <Link href="/series">Series</Link>
+      </li>
       </ul>
     </nav>
   );
