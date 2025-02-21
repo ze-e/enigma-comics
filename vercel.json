@@ -1,0 +1,10 @@
+{
+    "redirects": [
+      {
+        "source": "/survey",
+        "destination": "https://forms.gle/mvKVC2nLTjTgAtSMA",
+        "permanent": true
+      }
+    ]
+  }
+  
