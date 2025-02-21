@@ -1,7 +1,7 @@
 {
     "redirects": [
       {
-        "source": "/survey",
+        "source": "/feedback",
         "destination": "https://forms.gle/mvKVC2nLTjTgAtSMA",
         "permanent": true
       }
