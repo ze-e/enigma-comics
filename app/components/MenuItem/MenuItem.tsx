@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { jacquard24Class } from "../Fonts/Fonts";
 
-export default function MenuItem({ children, href }: { children: React.ReactNode, href?: string }) {
+export default function MenuItem({ children, href, outbound }: { children: React.ReactNode, href?: string, outbound?: boolean }) {
     
   const ComponentBody:React.FC = () => (
     <h2 className={`
@@ -14,5 +14,5 @@ export default function MenuItem({ children, href }: { children: React.ReactNode
   )
   
 
-  return href ? <Link href={href}><ComponentBody /></Link> : <ComponentBody />
+  return href ? outbound ? <Link href={href} target="_blank" rel="noopener noreferrer"><ComponentBody /></Link> : <Link href={href}><ComponentBody /></Link> : <ComponentBody />
 }

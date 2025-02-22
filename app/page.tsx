@@ -39,8 +39,8 @@ export default function Home() {
           <MenuItem href="/placeholder">
             Our Artists
           </MenuItem>
-          <MenuItem href="/placeholder">
-            Contact Us
+          <MenuItem href="/feedback" outbound={true}>
+            Feedback
           </MenuItem>
         </div>
         <div className="h-[32px]"></div>      
