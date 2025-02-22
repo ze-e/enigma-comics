@@ -22,8 +22,9 @@ export default function Home() {
 
         <div className="w-full md:w-[684px] mx-auto flex flex-col md:flex-row justify-between">
           <MenuItem href="/placeholder">
-            Buy Comics
+            Our Artists
           </MenuItem>
+
           <MenuItem href="/placeholder">
             Our Series
           </MenuItem>
@@ -35,10 +36,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full md:w-[684px] mx-auto flex flex-col md:flex-row justify-between">
-          <MenuItem href="/placeholder">
-            Our Artists
-          </MenuItem>
+        <div className="w-full md:w-[684px] mx-auto flex flex-col md:flex-row justify-between md:justify-center">
           <MenuItem href="/feedback" outbound={true}>
             Feedback
           </MenuItem>
