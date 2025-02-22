@@ -16,7 +16,7 @@ export default function Home() {
           <Image 
             src={Lettering} 
             alt="enigma-comics" 
-            className="w-[200px] md:w-[600px]" 
+            className="w-[200px] md:w-[400px]" 
           />
         </div>
 
@@ -43,6 +43,7 @@ export default function Home() {
             Contact Us
           </MenuItem>
         </div>
+        <div className="h-[32px]"></div>      
       </div>
     </div>
   );
