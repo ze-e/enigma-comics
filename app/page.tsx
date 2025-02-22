@@ -36,8 +36,12 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full md:w-[684px] mx-auto flex flex-col md:flex-row justify-between md:justify-center">
-          <MenuItem href="/feedback" outbound={true}>
+        <div className="w-full md:w-[684px] mx-auto flex flex-col md:flex-row justify-between">
+          <MenuItem href="/placeholder">
+            Contact Us
+          </MenuItem>
+
+          <MenuItem href="/feedback">
             Feedback
           </MenuItem>
         </div>

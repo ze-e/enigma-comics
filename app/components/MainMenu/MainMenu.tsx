@@ -23,11 +23,11 @@ export default function MainMenu() {
       </li>
       {" "}◾{" "}
       <li>
-        <Link href="/buy">Buy</Link>
+        <Link href="/contact">Contact</Link>
       </li>
       {" "}◾{" "}
       <li>
-        <Link href="/contact">Contact</Link>
+        <Link href="/feedback">Feedback</Link>
       </li>
       {" "}◾{" "}
       <li>

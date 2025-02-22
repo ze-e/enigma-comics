@@ -11,16 +11,20 @@ type ArtistProps = {
 
 export default function Artist({ img, name, credits, description, links }: ArtistProps) {
   return (
-    <div className="flex">
-      {img && <div className="w-1/3">
-        <Image src={img} alt="Artist" />
-      </div>}
+    <div className="flex flex-col md:flex-row p-1 m-1">
+      {img && (
+        <div className="w-full md:w-1/3">
+          <div className="relative w-full h-[300px] md:w-[360px] md:h-[360px]">
+            <Image src={img} alt="Artist" fill className="object-contain" />
+          </div>
+        </div>
+      )}
       <div className="flex-1">
         {name && <h5>{name}</h5>}
         {credits && credits.length > 0 && (
           <div>
-            {credits.map((credit) => (
-                <p>{credit}</p>
+            {credits.map((credit, index) => (
+              <p key={index}>{credit}</p>
             ))}
           </div>
         )}
