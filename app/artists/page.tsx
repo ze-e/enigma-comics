@@ -32,19 +32,21 @@ export default function Artists() {
         />
         <br/><br/>
       <MenuItem>Our Friends</MenuItem>
-      <Artist 
-        name="Wallace Comics" 
-        description="
-          Our comic making friends!
-        "
-      />
-      <Artist 
-        name="Spirit Media" 
-        description="
-          Our comic printing friends!
-        "
-        links={["https://spiritmedias.net"]}
-      />
+      <div className="flex flex-row max-[1140px]:flex-col max-[1140px]: p-1 m-1 mx-auto w-[360px]">
+        <Artist 
+          name="Wallace Comics" 
+          description="
+            Our comic making friends!
+          "
+        />
+        <Artist 
+          name="Spirit Media" 
+          description="
+            Our comic printing friends!
+          "
+          links={["https://spiritmedias.net"]}
+        />
+      </div>
     </>);
   }
   
