@@ -12,20 +12,18 @@ type ArtistProps = {
 
 export default function Artist({ img, name, credits, description, links }: ArtistProps) {
   return (
-    <div className="flex flex-row max-[1140px]:flex-col max-[1140px]: p-1 m-1 max-[1140px]:mx-auto max-[1140px]:max-w-[360px]">
+    <div className="flex flex-row max-[1140px]:flex-col max-[900px] max-[1140px]:max-w-[360px] md:w-[900px] mx-auto">
       {img && (
-        <div className="w-full md:w-1/3">
-          <div className="relative w-full h-[300px] md:w-[360px] md:h-[360px] mb-[14px] mt-[14px]">
-            <Image src={img} alt="Artist" fill className="object-contain" />
-          </div>
+        <div className="relative h-[300px] min-[1140px]:w-[360px] min-[1140px]:h-[360px] mb-[14px] mt-[14px]">
+          <Image src={img} alt="Artist" fill className="object-contain" />
         </div>
       )}
-      <div className="flex-1 mb-[20px] mt-[20px]">
+      <div className="flex-1 mb-[20px] mt-[20px] min-[1140px]:w-[600px] min-[1140px]:ml-[24px]">
         {name && <H5>{name}</H5>}
         {credits && credits.length > 0 && (
           <div>
             {credits.map((credit, index) => (
-              <p className={`${bitterClass} text-lg`} key={index}>{credit}</p>
+              <p className={`${bitterClass} min-[1140px]:text-lg text-base`} key={index}>{credit}</p>
             ))}
           </div>
         )}

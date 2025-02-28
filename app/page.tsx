@@ -41,7 +41,7 @@ export default function Home() {
             Contact Us
           </MenuItem>
 
-          <MenuItem href="/feedback">
+          <MenuItem href="/placeholder">
             Feedback
           </MenuItem>
         </div>

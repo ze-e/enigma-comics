@@ -1,4 +1,5 @@
 import Artist from "../components/Artist/Artist";
+import SpecialThanks from "../components/SpecialThanks/SpecialThanks";
 import MenuItem from "@/app/components/MenuItem/MenuItem";
 import RexLogo from "@/app/img/artists/rex_logo.jpg"
 import ArnoldLogo from "@/app/img/artists/arnold_logo.jpg"
@@ -32,14 +33,14 @@ export default function Artists() {
         />
         <br/><br/>
       <MenuItem>Our Friends</MenuItem>
-      <div className="flex flex-row max-[1140px]:flex-col max-[1140px]: p-1 m-1 mx-auto w-[360px]">
-        <Artist 
+      <div className="flex flex-row max-[1140px]:flex-col mx-auto">
+        <SpecialThanks 
           name="Wallace Comics" 
           description="
             Our comic making friends!
           "
         />
-        <Artist 
+        <SpecialThanks 
           name="Spirit Media" 
           description="
             Our comic printing friends!

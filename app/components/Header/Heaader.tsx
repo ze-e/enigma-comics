@@ -1,13 +1,20 @@
-import Image from "next/image";
-import EnigmaLogo from "@/app/img/Enigma-Logo.png"
+"use client";
+
 import MainMenu from "../MainMenu/MainMenu";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
+  
+  const pathname = usePathname();
+
+  if (pathname === "/") {
+    return null;
+  }
+
   return (
     <div className="bg-[#281668] h-[60px] w-full p-[10px]">
       <div className="flex justify-between">
-        <Image src={EnigmaLogo} alt="enigma-logo" width={40} />
-        <MainMenu />
+      <MainMenu />
       </div>
     </div>
   );
