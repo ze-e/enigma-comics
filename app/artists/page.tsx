@@ -1,8 +1,8 @@
 import Artist from "../components/Artist/Artist";
 import SpecialThanks from "../components/SpecialThanks/SpecialThanks";
 import MenuItem from "@/app/components/MenuItem/MenuItem";
-import RexLogo from "@/app/img/artists/rex_logo.jpg"
-import ArnoldLogo from "@/app/img/artists/arnold_logo.jpg"
+import RexLogo from "@/app/img/artists/rex_logo.jpg";
+import ArnoldLogo from "@/app/img/artists/arnold_logo.jpg";
 
 export default function Artists() {
     return (<>
@@ -33,7 +33,7 @@ export default function Artists() {
         />
         <br/><br/>
       <MenuItem>Our Friends</MenuItem>
-      <div className="flex flex-row max-[1140px]:flex-col w-[700px] mx-auto items-center justify-center">
+      <div className="flex flex-row max-[1140px]:flex-col max-[1140px]:w-[300px] w-[700px] mx-auto items-center justify-center">
         <SpecialThanks 
           name="Wallace Comics" 
           description="

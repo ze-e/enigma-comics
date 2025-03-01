@@ -21,11 +21,11 @@ export default function Home() {
         </div>
 
         <div className="w-full md:w-[684px] mx-auto flex flex-col md:flex-row justify-between">
-          <MenuItem href="/placeholder">
+          <MenuItem href="/artists">
             Our Artists
           </MenuItem>
 
-          <MenuItem href="/placeholder">
+          <MenuItem href="/series">
             Our Series
           </MenuItem>
         </div>
@@ -37,11 +37,11 @@ export default function Home() {
         </div>
 
         <div className="w-full md:w-[684px] mx-auto flex flex-col md:flex-row justify-between">
-          <MenuItem href="/placeholder">
+          <MenuItem href="/contact">
             Contact Us
           </MenuItem>
 
-          <MenuItem href="/placeholder">
+          <MenuItem href="/feedback">
             Feedback
           </MenuItem>
         </div>

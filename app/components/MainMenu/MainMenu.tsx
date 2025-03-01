@@ -23,16 +23,16 @@ export default function MainMenu() {
           <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="/placeholder">Artists</Link>
+          <Link href="/artists">Artists</Link>
         </li>
         <li>
-          <Link href="/placeholder">Contact</Link>
+          <Link href="/contact">Contact</Link>
         </li>
         <li>
-          <Link href="/placeholder">Feedback</Link>
+          <Link href="/feedback">Feedback</Link>
         </li>
         <li>
-          <Link href="/placeholder">Series</Link>
+          <Link href="/series">Series</Link>
         </li>
       </ul>
 
@@ -61,16 +61,16 @@ export default function MainMenu() {
               <Link href="/" onClick={() => setMenuOpen(false)}>Home</Link>
             </li>
             <li>
-              <Link href="/placeholder" onClick={() => setMenuOpen(false)}>Artists</Link>
+              <Link href="/artists" onClick={() => setMenuOpen(false)}>Artists</Link>
             </li>
             <li>
-              <Link href="/placeholder" onClick={() => setMenuOpen(false)}>Contact</Link>
+              <Link href="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
             </li>
             <li>
-              <Link href="/placeholder" onClick={() => setMenuOpen(false)}>Feedback</Link>
+              <Link href="/feedback" onClick={() => setMenuOpen(false)}>Feedback</Link>
             </li>
             <li>
-              <Link href="/placeholder" onClick={() => setMenuOpen(false)}>Series</Link>
+              <Link href="/series" onClick={() => setMenuOpen(false)}>Series</Link>
             </li>
           </ul>
         </div>

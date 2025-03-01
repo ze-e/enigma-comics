@@ -17,7 +17,7 @@ export default function Artist({ img, name, credits, description, links }: Artis
           <Image src={img} alt="Artist" fill className="object-contain" />
         </div>
       )}
-      <div className="flex-1 mb-[20px] mt-[20px] min-[1140px]:w-[600px] min-[1140px]:ml-[24px]">
+      <div className="flex-1 mb-[20px] mt-[20px] min-[1140px]:w-[600px] min-[1140px]:ml-[24px] max-[1140px]:max-w-[300px] max-[1140px]:p-[10px]">
         {name && <Heading>{name}</Heading>}
         {credits && credits.length > 0 && (
           <div>
@@ -26,6 +26,8 @@ export default function Artist({ img, name, credits, description, links }: Artis
             ))}
           </div>
         )}
+        <br />
+        <br />
         {description && <Heading level={3}><strong>{description}</strong></Heading>}
         {links && links.length > 0 && (
           <div>
