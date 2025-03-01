@@ -8,7 +8,7 @@ type ArtistProps = {
 
 export default function SpecialThanks({ name, description, links }: ArtistProps) {
   return (
-    <div className="flex flex-row max-[1140px]:flex-col max-[900px] max-[1140px]:max-w-[360px] md:w-[900px] mx-auto">
+    <div className="flex flex-col w-[300px] p-[24px] text-center">
         {name && <H5>{name}</H5>}
         {description && <p className={`${aleoClass} font-bold	`}>{description}</p>}
         {links && links.length > 0 && (

@@ -33,7 +33,7 @@ export default function Artists() {
         />
         <br/><br/>
       <MenuItem>Our Friends</MenuItem>
-      <div className="flex flex-row max-[1140px]:flex-col mx-auto">
+      <div className="flex flex-row max-[1140px]:flex-col w-[700px] mx-auto items-center justify-center">
         <SpecialThanks 
           name="Wallace Comics" 
           description="
