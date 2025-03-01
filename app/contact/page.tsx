@@ -7,7 +7,7 @@ export default function Contact() {
       <>
         <MenuItem>Talk to us!</MenuItem>
         <div className="max-w-[500px] mx-auto text-center">
-        <Heading>We'd Love to Hear From You!</Heading>
+        <Heading>We&apos;d Love to Hear From You!</Heading>
           <ul>
               <li>
                 <Heading level={3}>✉ <a href="mailto:zacharyrexmail@gmail.com">zacharyrexmail@gmail.com</a></Heading>
