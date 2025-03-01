@@ -1,4 +1,4 @@
-import H5 from "../H5/H5";
+import Heading from "../Heading/Heading";
 import { aleoClass } from "../Fonts/Fonts";
 type ArtistProps = {
   name: string;
@@ -9,7 +9,7 @@ type ArtistProps = {
 export default function SpecialThanks({ name, description, links }: ArtistProps) {
   return (
     <div className="flex flex-col w-[300px] p-[24px] text-center">
-        {name && <H5>{name}</H5>}
+        {name && <Heading>{name}</Heading>}
         {description && <p className={`${aleoClass} font-bold	`}>{description}</p>}
         {links && links.length > 0 && (
           <div>

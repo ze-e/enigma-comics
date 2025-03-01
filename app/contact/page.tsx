@@ -1,16 +1,17 @@
 import MenuItem from "@/app/components/MenuItem/MenuItem";
 import Link from "next/link";
+import Heading from "../components/Heading/Heading";
 
 export default function Contact() {
     return (<>
       <MenuItem>Talk to us!</MenuItem>
-      <h4>We'd Love to Hear From You!</h4>
+      <Heading>We'd Love to Hear From You!</Heading>
         <ul>
             <li>
-              <div>✉ <a href="mailto:zacharyrexmail@gmail.com">zacharyrexmail@gmail.com</a></div>
+              <Heading level={3}>✉ <a href="mailto:zacharyrexmail@gmail.com">zacharyrexmail@gmail.com</a></Heading>
             </li>
         </ul>
-      <h4>Give us some feedback!</h4>
+      <Heading level={2}>Give us some feedback!</Heading>
       <Link href="/feedback">Feedback</Link>
     </>);
   }

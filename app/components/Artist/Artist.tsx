@@ -1,7 +1,6 @@
 import Image from "next/image";
-import H5 from "../H5/H5";
+import Heading from "../Heading/Heading";
 import { StaticImageData } from "next/image";
-import { aleoClass, bitterClass } from "../Fonts/Fonts";
 type ArtistProps = {
   img?: StaticImageData;
   name: string;
@@ -19,15 +18,15 @@ export default function Artist({ img, name, credits, description, links }: Artis
         </div>
       )}
       <div className="flex-1 mb-[20px] mt-[20px] min-[1140px]:w-[600px] min-[1140px]:ml-[24px]">
-        {name && <H5>{name}</H5>}
+        {name && <Heading>{name}</Heading>}
         {credits && credits.length > 0 && (
           <div>
             {credits.map((credit, index) => (
-              <p className={`${bitterClass} min-[1140px]:text-lg text-base`} key={index}>{credit}</p>
+              <Heading level={2} key={index}>{credit}</Heading>
             ))}
           </div>
         )}
-        {description && <p className={`${aleoClass} font-bold	`}>{description}</p>}
+        {description && <Heading level={3}><strong>{description}</strong></Heading>}
         {links && links.length > 0 && (
           <div>
             {links.map((link, index) => (
@@ -36,9 +35,11 @@ export default function Artist({ img, name, credits, description, links }: Artis
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`mr-2 ${aleoClass}`}
+                className={`mr-2`}
               >
+                <Heading level={3}>
                 {link}
+                </Heading>
               </a>
             ))}
           </div>
