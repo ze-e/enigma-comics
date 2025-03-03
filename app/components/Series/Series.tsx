@@ -28,6 +28,8 @@ export default function Series({ imgs, name, tagline, credits, description, link
         <br />
         <br />
         {description && <Heading level={3}><strong>{description}</strong></Heading>}
+        <br />
+        <br />
         {links && links.length > 0 && (
           <div>
             {links.map((link, index) => (

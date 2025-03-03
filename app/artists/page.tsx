@@ -15,7 +15,7 @@ export default function Artists() {
             Zachary Rex is a writer based in Boise, Idaho. 
             He writes all kinds of stories, from sci-fi and adventure to satire. 
             He has been working on various creative projects since 4th grade. 
-            He never knows what to write in these.
+His work reflects a passion for exploring the intersections of technology, ideas, and everyday experiences, inviting readers to see familiar topics in a fresh light.
           "
           links={["https://zacharyrex.substack.com"]}
         />

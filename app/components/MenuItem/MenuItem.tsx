@@ -5,7 +5,8 @@ export default function MenuItem({ children, href, outbound }: { children: React
     
   const ComponentBody:React.FC = () => (
     <h2 className={`
-      font-bold text-center mb-4 text-[75px] 
+      font-bold text-center mb-4 text-[75px]
+      max-[360px]:text-[60px]
       text-stroke antialiased subpixel-antialiased
       ${jacquard24Class}`
     }>

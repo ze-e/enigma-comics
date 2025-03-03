@@ -31,8 +31,6 @@ export default function Artist({ img, name, credits, description, links }: Artis
         {description && <Heading level={3}><strong>{description}</strong></Heading>}
         <br />
         <br />
-        <br />
-        <br />
         {links && links.length > 0 && (
           <div>
             {links.map((link, index) => (
